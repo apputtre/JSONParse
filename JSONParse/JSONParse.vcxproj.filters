@@ -15,8 +15,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="include\JSONType.tpp">
-      <Filter>Header Files</Filter>
+    <None Include="test.json" />
+    <None Include="src\JSONType.tpp">
+      <Filter>Source Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -27,6 +28,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\JSONType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -41,6 +45,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\JSONType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tests.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

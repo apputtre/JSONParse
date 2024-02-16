@@ -70,9 +70,6 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\puttrea\source\repos\JSONParse\JSONParse\include;$(IncludePath)</IncludePath>
-  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -131,18 +128,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="include\JSONType.tpp" />
+    <None Include="src\JSONType.tpp" />
+    <None Include="test.json" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\jsonparse.cpp" />
     <ClCompile Include="src\JSONParser.cpp" />
     <ClCompile Include="src\JSONType.cpp" />
+    <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\JSONException.h" />
     <ClInclude Include="include\jsonparse.h" />
     <ClInclude Include="include\JSONParser.h" />
     <ClInclude Include="include\JSONType.h" />
+    <ClInclude Include="include\tests.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
