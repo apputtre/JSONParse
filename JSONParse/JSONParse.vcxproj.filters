@@ -18,17 +18,12 @@
     <ClCompile Include="jsonparse.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="JSONParser.cpp">
+    <ClCompile Include="JSONNumber.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="JSONType.cpp">
+    <ClCompile Include="JSONObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="JSONType.tpp">
-      <Filter>Source Files</Filter>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="JSONException.h">
@@ -37,10 +32,13 @@
     <ClInclude Include="jsonparse.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="JSONParser.h">
+    <ClInclude Include="JSONType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="JSONType.h">
+    <ClInclude Include="JSONNumber.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JSONObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

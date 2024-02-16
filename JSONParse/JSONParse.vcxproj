@@ -128,17 +128,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="JSONNumber.cpp" />
+    <ClCompile Include="JSONObject.cpp" />
     <ClCompile Include="jsonparse.cpp" />
-    <ClCompile Include="JSONParser.cpp" />
-    <ClCompile Include="JSONType.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="JSONType.tpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="JSONException.h" />
+    <ClInclude Include="JSONNumber.h" />
+    <ClInclude Include="JSONObject.h" />
     <ClInclude Include="jsonparse.h" />
-    <ClInclude Include="JSONParser.h" />
     <ClInclude Include="JSONType.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

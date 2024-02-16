@@ -3,13 +3,13 @@
 
 #include <sstream>
 
-#include "JSONParser.h"
+//#include "JSONParser.h"
 #include "JSONType.h"
 
 namespace jsonparse
 {
 
-	JSONType parse(std::istream& is);
+	//JSONType parse(std::istream& is);
 }
 
 # endif JSONPARSE_H

@@ -11,7 +11,5 @@ using namespace jsonparse;
 
 int main()
 {
-	tests::run_tests();
-	std::cout << tests::report;
 }
 

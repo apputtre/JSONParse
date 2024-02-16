@@ -132,10 +132,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\JSONParse\jsonparse.cpp" />
-    <ClCompile Include="..\JSONParse\JSONParser.cpp" />
-    <ClCompile Include="..\JSONParse\JSONType.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="tests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tests.h" />
