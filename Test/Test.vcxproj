@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{78c74313-a2a0-4727-9ac6-d6a09d74434c}</ProjectGuid>
-    <RootNamespace>JSONParse</RootNamespace>
+    <ProjectGuid>{a3bc32ca-b958-4f8b-b65c-de55dbba6020}</ProjectGuid>
+    <RootNamespace>Test</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -131,18 +131,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="include\JSONType.tpp" />
+    <ClCompile Include="..\JSONParse\src\jsonparse.cpp" />
+    <ClCompile Include="..\JSONParse\src\JSONParser.cpp" />
+    <ClCompile Include="..\JSONParse\src\JSONType.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\jsonparse.cpp" />
-    <ClCompile Include="src\JSONParser.cpp" />
-    <ClCompile Include="src\JSONType.cpp" />
+    <ClInclude Include="tests.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\JSONException.h" />
-    <ClInclude Include="include\jsonparse.h" />
-    <ClInclude Include="include\JSONParser.h" />
-    <ClInclude Include="include\JSONType.h" />
+    <None Include="test.json" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
