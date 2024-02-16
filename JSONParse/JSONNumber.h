@@ -13,6 +13,8 @@ public:
 		: val{ val }
 	{};
 
+	std::string serialize();
+
 	operator int();
 private:
 	int val;

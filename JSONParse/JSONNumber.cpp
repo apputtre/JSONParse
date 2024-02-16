@@ -1,10 +1,17 @@
+#include <string>
+#include <algorithm>
+
 #include "JSONNumber.h"
-#include "jsonparse.h"
 
 namespace jsonparse
 {
 	JSONNumber::operator int()
 	{
 		return val;
+	}
+
+	std::string JSONNumber::serialize()
+	{
+		return std::to_string(val);
 	}
 }

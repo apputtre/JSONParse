@@ -131,6 +131,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\JSONParse\JSONNumber.cpp" />
+    <ClCompile Include="..\JSONParse\JSONObject.cpp" />
     <ClCompile Include="..\JSONParse\jsonparse.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
