@@ -15,39 +15,42 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="test.json" />
-    <None Include="src\JSONType.tpp">
+    <ClCompile Include="jsonparse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JSONParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JSONType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JSONType.tpp">
       <Filter>Source Files</Filter>
     </None>
+    <None Include="test.json" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\jsonparse.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\JSONParser.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\JSONType.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="include\JSONException.h">
+    <ClInclude Include="JSONException.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\jsonparse.h">
+    <ClInclude Include="jsonparse.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\JSONParser.h">
+    <ClInclude Include="JSONParser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\JSONType.h">
+    <ClInclude Include="JSONType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\tests.h">
+    <ClInclude Include="tests.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -128,21 +128,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="src\JSONType.tpp" />
+    <ClCompile Include="jsonparse.cpp" />
+    <ClCompile Include="JSONParser.cpp" />
+    <ClCompile Include="JSONType.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="tests.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JSONType.tpp" />
     <None Include="test.json" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\jsonparse.cpp" />
-    <ClCompile Include="src\JSONParser.cpp" />
-    <ClCompile Include="src\JSONType.cpp" />
-    <ClCompile Include="src\main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="include\JSONException.h" />
-    <ClInclude Include="include\jsonparse.h" />
-    <ClInclude Include="include\JSONParser.h" />
-    <ClInclude Include="include\JSONType.h" />
-    <ClInclude Include="include\tests.h" />
+    <ClInclude Include="JSONException.h" />
+    <ClInclude Include="jsonparse.h" />
+    <ClInclude Include="JSONParser.h" />
+    <ClInclude Include="JSONType.h" />
+    <ClInclude Include="tests.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
